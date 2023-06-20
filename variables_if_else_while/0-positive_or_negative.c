@@ -12,15 +12,15 @@
 	
 	if(n<0)
 	{
-		printf("%d\n ,n);
+		printf("%i\n ,n);
 	}
 	if else(n>0)
 	{
-		printf("%d\n, n);
+		printf("%i\n, n);
 	}
 	if else(n==0)
 	{
-		printf("%d\n, n);
+		printf("%i\n, n);
 	}
 	
 	return (0);
