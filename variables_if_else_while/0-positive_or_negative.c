@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /* The function of this code is that everytime a random number is asigned to the value n. It will know how to make it negative, positive or that is equal.*/
 
