@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-/Make it positive but make it negative/
 
-/* The function of this code is that everytime a random number is asigned to the value n. It will know how to make it negative, positive or that is equa./
-int main(void)
+/* The function of this code is that everytime a random number is asigned to the value n. It will know how to make it negative, positive or that is equal.*/
+
+   int main(void)
 {
 	int n;
 
