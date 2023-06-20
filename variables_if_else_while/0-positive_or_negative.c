@@ -2,26 +2,28 @@
 #include <time.h>
 #include <stdio.h>
 
-/* The function of this code is that everytime a random number is asigned to the value n. It will know how to make it negative, positive or that is equal.*/
+/**
+ *main - The code will tell if they have a positive or negative num.
+ */
 
-   int main(void)
+int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	if(n > 0)
+
+	if (n > 0)
 	{
-		printf("%d is a positive number\n", n);
+		printf("%d is positive\n", n);
 	}
-	else if(n < 0)
+	else if (n == 0)
 	{
-        printf("%d is a negative number\n", n);
+		printf("%d is zero\n", n);
 	}
-	else if (n == 0) 
+	else
 	{
-        printf("%d is zero\n", n);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
