@@ -4,6 +4,7 @@
 
 /**
  *main - The code will tell if they have a positive or negative num.
+ *Return: always 0
  */
 
 int main(void)
