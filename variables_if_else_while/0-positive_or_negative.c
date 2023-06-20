@@ -14,11 +14,11 @@
 	{
 		printf("%d\n ,n);
 	}
-	else(n>0)
+	if else(n>0)
 	{
 		printf("%d\n, n);
 	}
-	else(n==0)
+	if else(n==0)
 	{
 		printf("%d\n, n);
 	}
