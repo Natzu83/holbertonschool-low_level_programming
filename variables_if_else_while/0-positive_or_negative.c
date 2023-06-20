@@ -13,15 +13,15 @@
 	
 	if(n<0)
 	{
-		printf("%i\n ,n);
+		printf("%i\n", n);
 	}
 	if else(n>0)
 	{
-		printf("%i\n, n);
+		printf("%i\n", n);
 	}
 	if else(n==0)
 	{
-		printf("%i\n, n);
+		printf("%i\n", n);
 	}
 	
 	return (0);
