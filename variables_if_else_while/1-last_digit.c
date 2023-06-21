@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/* Program will print the digital number stored in the n var.
+/* main- Program will print the digital number stored in the n var.
  * Return: always 0 
  * */
 
