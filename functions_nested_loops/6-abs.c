@@ -1,20 +1,15 @@
 #include "main.h"
 
 /**
-  * main - Prints the numbers since 0 to 9
-  *
-  * Return: Always (Success)
-  */
-int main(void)
+ * _abs - Computes the absolute value of an integer.
+ * @n: The integer to be computed.
+ *
+ * Return: The absolute value of the integer.
+ */
+int _abs(int n)
 {
-	int n;
-
-	for (n = '0'; n <= '9'; n++)
-	{
-		putchar(n);
-	}
-
-	putchar('\n');
-
-	return (0);
+	if (n >= 0)
+		return (n);
+	else
+		return (-n);
 }
