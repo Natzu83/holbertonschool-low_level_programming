@@ -7,6 +7,8 @@
  * @int n is variable name
  * @lenght++ means it increments
  * @s++ same as lenght var
+ * @_strlen is the type value
+ * @s name of the value in short version
  * Return: Always 0.
  */
 
