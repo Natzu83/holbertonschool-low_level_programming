@@ -9,9 +9,9 @@
 
 void _puts(char *str);
 {
-	int *str;
+	int *ptr;
 
-	*str = "I do not fear computers.";
-	_puts(str);
+	*ptr = "I do not fear computers.";
+	_puts(ptr);
 	return (0)
 }
