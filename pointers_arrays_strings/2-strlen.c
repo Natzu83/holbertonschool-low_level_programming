@@ -3,13 +3,12 @@
 #include <string.h>
 
 /**
- * main - int _strlen(char *s)
  * _strlen - Returns the length of a string
  * @s: String to count
  * @int n is variable name
  * @lenght++ means it increments
  * @s++ same as lenght var
- * Return: Always 0.
+ * Return: String length
  */
 
 int _strlen(char *s)
