@@ -7,11 +7,11 @@
  * Return: Always 0.
  */
 
-void _puts(char *str);
+void _puts(char *str)
 {
-	int *ptr;
+	int *str;
 
-	*ptr = "I do not fear computers.";
-	_puts(ptr);
+	*str = "I do not fear computers.";
+	_puts(str);
 	return (0)
 }
