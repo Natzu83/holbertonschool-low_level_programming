@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - void swap_int(int *a, int *b);
- * swap_int is the variable to change the value
- * a is the value
- * b is the value
- * Return : Always 0.
+ * swap_int - Swaps the values of two integers
+ * @a: An integer to swap
+ * @b: Another integer to swap
+ * Return: void
  */
 
 void swap_int(int *a, int *b)
