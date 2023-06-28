@@ -7,15 +7,16 @@
  * Return : Always 0.
  */
 
-int main(void)
+void swap_int(int *a, int *b)
 {
-	void swap_int(int *a, int *b);
-
-	int a;
-	int b;
-
 	*a = 98;
-	*b = 42;
+	*b = 48;
+}
+
+int main( void)
+{
+	int x = 10, y = 20;
+	updateValue(&x, &y);
 
 	return (0);
 }
