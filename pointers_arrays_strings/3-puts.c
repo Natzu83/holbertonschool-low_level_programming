@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - void _puts(char *str)
- * @*str Is the value assigned via int
- * Return: Always 0.
- */
-
+  * _puts - Prints a string
+  * @str: The string to print
+  *
+  * Return: void
+  */
 void _puts(char *str)
 {
-	int *str;
+	for (; *str != '\0'; str++)
+	{
+		_putchar(*str);
+	}
 
-	*str = "I do not fear computers.";
-	_puts(str);
-	return (0)
+	_putchar('\n');
 }
