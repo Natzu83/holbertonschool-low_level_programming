@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * _strcpy - Copy the string
- * @dest: Return the value to the pointer
- * @src: Include the statment of the null byte 
- * Return: void
- */
-
+  * _strcpy - Copy a string
+  * @dest: Destination value
+  * @src: Le source value
+  *
+  * Return: the pointer to dest
+  */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
