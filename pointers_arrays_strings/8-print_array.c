@@ -3,19 +3,23 @@
 
 /**
  * print array - Prints elements of the array.
- * 
+ * @ a: An array of integres
+ * @ n: Is the number of elements to be printed
+ * Return: void
  */
 
 void print_array(int *a, int n)
 {
-	if (a == NULL || n <= 0)
-        return;
+	int j;
 
-	printf("%d", a[0]);
-
-	for (int i = 1; i < n; i++)
+	for (j = 0; j < n; j++)
 	{
-		printf(", %d", a[i]);
+		printf("%d", a[j]);
+
+		if (j != (n - 1))
+		{
+			printf(", ");
+		}
 	}
 
 	printf("\n");
