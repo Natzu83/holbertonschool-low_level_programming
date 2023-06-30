@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strcpy - Write a function
- * @char: Is a data type for characters
+ * _strcpy - Copy the string
  * @dest: Return the value to the pointer
  * @src: Include the statment of the null byte
+ * 
  * Return: void
  */
 
