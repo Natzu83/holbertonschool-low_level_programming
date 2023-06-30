@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print array - Prints elements of the array.
- * @ a: An array of integres
- * @ n: Is the number of elements to be printed
+ * print_array - Prints elements of the array.
+ * @a: An array of integres
+ * @n: Is the number of elements to be printed
  * Return: void
  */
 
