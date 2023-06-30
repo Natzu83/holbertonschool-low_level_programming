@@ -4,8 +4,7 @@
 /**
  * _strcpy - Copy the string
  * @dest: Return the value to the pointer
- * @src: Include the statment of the null byte
- * 
+ * @src: Include the statment of the null byte 
  * Return: void
  */
 
