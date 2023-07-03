@@ -5,6 +5,7 @@
  * print_diagsums - Prints sum of two diagonals of square matrix
  * @a: Array getting  evaluated
  * @size: Dimensions of the matrix
+ * Return: always 0
  */
 void print_diagsums(int *a, int size)
 {
@@ -20,4 +21,3 @@ void print_diagsums(int *a, int size)
         }
         printf("%i, %i\n", sum1, sum2);
 }
-~                                   
