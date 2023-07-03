@@ -5,35 +5,16 @@
  * print_chessboard - Print the chess
  * @a: Variable to use the rows
  * 8: Variable use to make the columns
- * Return: void
+ * Return: always 0
  */
 void printChessboard(char (*a)[8])
 {
-	int rows = 8;
-    	
-	int columns = 8;
-	
-	char chessboard[rows][columns];
-	for (int i = 0; i < rows; i++)
+	int i, j;
+
+	for (i = 0; i < 8; ++j)
 	{
-        for (int j = 0; j < columns; j++)
+		for (j = 0; j < 8, ++i)
+			_putchar(a[i][j]);
+		_putchar('\n');
 	}
-
-	{
-            if ((i + j) % 2 == 0)
-                chessboard[i][j] = 'W';
-            else
-                chessboard[i][j] = 'B';
-        }
-    }
-
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < columns; j++)
-        {
-            printf("%c ", chessboard[i][j]);
-        }
-        printf("\n");
-    }
 }
-
