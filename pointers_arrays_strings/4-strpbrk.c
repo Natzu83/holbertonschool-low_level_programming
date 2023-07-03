@@ -3,23 +3,32 @@
 #include <string.h>
 
 /**
- * _strpbrk - Function that locates the first occurrence in the string
+ _strpbrk - Function that locates the first occurrence in the string
  *  @accept: Need to matches its bytes
  *  @s: To the pointer
  *  Return: void
  */
-char *s_strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int s;
-	int j;
+	int a = 0, b;
 
-	for (i = 0; s[i]; ++1)
+	while (s[a])
 	{
-		for(j = 0; accept[j]; ++j)
+		b = 0;
+
+		while (accept[b])
 		{
-			if(s[i] == accept[j])
-				return (s +1);
+			if (s[a] == accept[b])
+			{
+				s += a;
+				return (s);
+			}
+
+			b++;
 		}
+
+		a++;
 	}
-	return (0);
+
+	return ('\0');
 }
