@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strspn Write - The Prototype for the substring lenght
+ * _strspn - The Prototype for the substring lenght
  * @s: String getting eval
  * @accept: Gives the bytes
  * Return: void
