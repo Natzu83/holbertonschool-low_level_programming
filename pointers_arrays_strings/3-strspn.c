@@ -4,16 +4,25 @@
 
 /**
  * _strspn Write - The Prototype for the substring lenght
- * @char *s: Char S variable
- * @char *accept: Gives the bytes
+ * @s: String getting eval
+ * @accept: Gives the bytes
  * Return: void
  */
 unsigned int _strspn(char *s, char *accept)
 {
-char *accept  = strspn(char *s);
+	int i;
+	int j;
 
-printf("Length of bytes: %zu\n", accept);
-
-return 0;
+	for (i = 0; s[i]; ++i)
+	{
+		for (j = 0; accept[j]; ++j)
+		{
+			if (s[i] == accept[j])
+				break;
+		}
+		if (accept[j] == '\0')
+			break;
+	}
+	return (i);
 }
 
