@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- _strpbrk - Function that locates the first occurrence in the string
+ * _strpbrk - Function that locates the first occurrence in the string
  *  @accept: Need to matches its bytes
  *  @s: To the pointer
  *  Return: void
