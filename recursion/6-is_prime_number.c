@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * test_prime - Test for prime number
- * @n: Number being evaluated
- * @i: Test value being iterated
+ * test_prime - Test for the prime number
+ * @n: Number getting evaluated
+ * @i: Test value
  *
  * Return: 1 if prime, 0 if not
  */
@@ -19,8 +19,8 @@ int test_prime(int n, int i)
 	return (test_prime(n, i + 1));
 }
 /**
- * is_prime_number - Checks for prime number
- * @n: Number being evaluated
+ * is_prime_number - Checks for the prime number
+ * @n: Number getting evaluated
  *
  * Return: Results from test_prime
  */
