@@ -3,8 +3,7 @@
 
 /**
  * is_prime_number - The prime number getting eva
- * @n: Variable
- * 
+ * @n: Variable 
  * Return: If the input integer is a prime number, otherwise return 0
  */
 int test_prime(int n, int i)
