@@ -5,7 +5,7 @@
  * factorial - The factorial
  * @n: The variable
  *
- * Retrurn: Always 0
+ * Retrurn: Factorial of number, -1 if negative
  */
 int factorial(int n)
 {
