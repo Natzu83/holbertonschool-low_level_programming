@@ -4,44 +4,35 @@
 #include <string.h>
 
 /**
-  * main - Prints the sum of args positive numbers lets gooo
-  * @argc: argument count because need that lol
-  * @argv: argument vector
-  *
-  * Return: Always zero
-  */
+ * main - Adds positive numbers
+ * @argc: Number of command line arguments
+ * @argv: Array containing command line arguments
+ *
+ * Return: 0, 1 if non-digits are passed
+ */
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned int k, sum = 0;
-	char *e;
+	int sum = 0;
+	char *endptr;
 
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 1; i < argc; ++i)
 		{
-			e = argv[i];
-
-			for (k = 0; k < strlen(e); k++)
+			sum += strtol(argv[i], &endptr, 10);
+			if ((*endptr >= 'A' && *endptr <= 'Z')
+				|| (*endptr >= 'a' && *endptr <= 'z'))
 			{
-				if (e[k] < 48 || e[k] > 57)
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-
-			sum += atoi(e);
-			e++;
 		}
-
 		printf("%d\n", sum);
 	}
 	else
 	{
 		printf("0\n");
 	}
-
 	return (0);
 }
-
