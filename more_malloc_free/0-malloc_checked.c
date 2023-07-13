@@ -3,17 +3,17 @@
 #include <stdio.h>
 
 /**
- * malloc_checked - Alloates memory using malloc
- * @b:How much bits to use
- * Return: pointer to allocated memory
+ * malloc_checked - Allocates memory using malloc
+ * @b: Amount of bits of memory
+ *
+ * Return: Pointer to allocated memory
  */
-
 void *malloc_checked(unsigned int b)
 {
-  void *ptr;
+	void *n;
 
-  ptr = malloc(b);
-  if (ptr == NULL)
-    exit(98);
-  return (ptr);
+	n = malloc(b);
+	if (!n)
+		exit(98);
+	return (n);
 }
