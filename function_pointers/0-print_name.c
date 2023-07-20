@@ -4,16 +4,13 @@
 /**
  * print_name - Print the name
  * @name: Name of the person
- *
+ * @f: Pointer to function
  * Return: Nothing
  */
 void print_name(char *name, void (*f)(char *))
 {
-	printf("Hello %s\n", name);
-}
-int main()
-{
-	void (*nick)(char*);
-	nick = print_name;
-	nick("Omar");
+	if (f != NULL)
+	{
+		f(name);
+	}
 }
