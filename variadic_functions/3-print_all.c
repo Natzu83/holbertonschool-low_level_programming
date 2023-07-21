@@ -1,67 +1,82 @@
 #include "variadic_functions.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
-  * print_all - Prints anything
-  * @format: Conversion specifier to prints
-  *
-  * Return: Nothing
-  */
+ * print_char - Prints a char
+ * @ap: Argument pointer
+ */
+void print_char(va_list ap)
+{
+	printf("%c", va_arg(ap, int));
+}
+
+/**
+ * print_integer - Prints an integer
+ * @ap: Argument pointer
+ */
+void print_integer(va_list ap)
+{
+	printf("%d", va_arg(ap, int));
+}
+
+/**
+ * print_float - Prints a float
+ * @ap: Argument pointer
+ */
+void print_float(va_list ap)
+{
+	printf("%f", va_arg(ap, double));
+}
+
+/**
+ * print_string - Prints a string
+ * @ap: Argument pointer
+ */
+void print_string(va_list ap)
+{
+	char *s = va_arg(ap, char *);
+
+	if (!s)
+	{
+		printf("(nil)");
+		return;
+	}
+		printf("%s", s);
+}
+
+/**
+ * print_all - Prints anything
+ * @format: Types of arguments passed to function
+ */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	f_dt form_types[] = {
-		{ "c", print_a_char },
-		{ "i", print_a_integer },
-		{ "f", print_a_float },
-		{ "s", print_a_char_ptr }
+	print_type types[] = {
+		{"c", print_char},
+		{"i", print_integer},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
 	};
-	unsigned int i = 0;
-	unsigned int j = 0;
+	va_list ap;
 	char *separator = "";
+	int i = 0;
+	int j = 0;
 
-	va_start(args, format);
-
-	while (format != NULL && format[i])
+	va_start(ap, format);
+	while (format && format[i])
 	{
-		j = 0;
-		while (j < 4)
+		while (types[j].type)
 		{
-			if (format[i] == *form_types[j].identifier)
+			if (*types[j].type == format[i])
 			{
-				form_types[j].f(separator, args);
+				printf("%s", separator);
+				types[j].f(ap);
 				separator = ", ";
 			}
-			j++;
+			++j;
 		}
-		i++;
+		j = 0;
+		++i;
 	}
-
-	va_end(args);
 	printf("\n");
-}
-
-/**
-  * print_a_char - Prints a character of the char type
-  * @separator: Separator of the character
-  * @args: List of variadic arguments
-  *
-  * Return: Nothing
-  */
-void print_a_char(char *separator, va_list args)
-{
-	printf("%s%c", separator, va_arg(args, int));
-}
-
-/**
-  * print_a_integer - Prints a character of integer
-  * @separator: Separator of the character
-  * @args: List of variadic arguments
-  *
-  * Return: Nothing
-  */
-void print_a_integer(char *separator, va_list args)
-{
-	printf("%s%i", separator, va_arg(args, int));
+	va_end(ap);
 }
