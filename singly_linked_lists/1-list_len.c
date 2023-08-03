@@ -8,15 +8,19 @@
  * @h:Linked list
  * Return: Number of elements
  */
-size_t list_len(const list_t *h)
-{
-	size_t count = 0;
+typedef struct list_t {
+    int data;
+    struct list_t *next;
+} list_t;
 
-	while (h)
-	{
-		h = h->next;
-		count++;
-	}
+size_t list_len(const list_t *h) {
+    size_t count = 0;
 
-	return (count);
+    while (h != NULL) {
+        count++;
+        h = h->next;
+    }
+
+    return count;
 }
+
