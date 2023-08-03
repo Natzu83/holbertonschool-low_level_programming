@@ -4,18 +4,19 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
- * list_len - Returns the  number of nodes on a list
- * @h:Linked list
- * Return: Number of elements
+ * list_len - Show the number of elements in the list
+ * @h: Linked list
+ * Return: Number of elements in the list
  */
 size_t list_len(const list_t *h)
 {
-	size_t n = 0;
+	size_t count = 0;
 
 	while (h)
 	{
-		n++;
 		h = h->next;
+		count++;
 	}
-	return (n);
+
+	return (count);
 }
