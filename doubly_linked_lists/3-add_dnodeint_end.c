@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
  * add_dnodeint_end - Add a node in the tail
  * @head: Pointer to direction of the head
