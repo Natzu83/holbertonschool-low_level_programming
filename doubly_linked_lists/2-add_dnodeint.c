@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
  * add_dnodeint- Insert new node at the beginnig
  * @head: Pointer to the direction of the head
