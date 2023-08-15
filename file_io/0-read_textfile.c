@@ -5,8 +5,8 @@
 /**
  * read_textfile - Function to open and read
  * size_t: Size
- * filename: File to read
- * letters:
+ * @filename: File to read
+ * @letters: Numbers of letters to read and print
  * Return: Letters and numbers
  */
 ssize_t read_textfile(const char *filename, size_t letters)
